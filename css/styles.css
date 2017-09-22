@@ -1,0 +1,280 @@
+body {
+	background-color: #696969;
+}
+
+
+
+/*****************************************/
+/*Header*/
+/*****************************************/
+
+.header-wrapper {
+	position: relative;
+}
+
+/*Logo*/
+
+.logo-wrapper {
+	position: absolute;
+	left: 50%;
+	z-index: 5;
+}
+
+#header-logo {
+	padding-top: 10px;
+	width: 200px;
+	margin-left: -100px;
+}
+
+/*Navbar Overlay*/
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/*Main Nav*/
+
+.main-nav {
+	background-color: #282828;
+	width: 100vw; /*This and margin left below are needed for child div to be full width*/
+	position: absolute;
+	margin-left: 0;
+	margin-right: 0;
+	height: 46px;
+}
+
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+}
+
+.main-nav-link {
+	padding: 0;
+}
+
+.main-nav .main-nav-link {
+	margin: 0;
+	color: white;
+	font-size: 1.4em;
+}
+
+.main-nav .main-nav-link:hover { /*Hover color*/
+	color: rgba(255,255,255, 0.5);
+}
+
+.main-nav .navbar-toggler {
+    border-color: rgb(0,0,0) !important;
+    background-color: white;
+}
+
+.main-nav .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/*Navbar*/
+
+.navbar {
+	margin-top: 20px;
+}
+
+.nav-link {
+	margin-top: 20px;
+	font-size: 2em;
+}
+
+.home-link {
+	margin-right: 30px;
+}
+
+.us-link {
+	margin-right: 140px;
+}
+
+.food-link {
+	margin-left: 140px;
+}
+
+.drink-link {
+	margin-left: 
+}
+
+.navbar .navbar-nav .nav-link { /*Text color*/
+	color: white;
+}
+
+.navbar .navbar-nav .nav-link:hover { /*Hover color*/
+	color: rgba(255,255,255, 0.5);
+}
+
+.navbar .navbar-toggler {
+    border-color: rgb(255,255,255);
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+
+/*****************************************/
+/*Site*/
+/*****************************************/
+
+/*Home*/
+
+.home-container {
+	background-image: url('../img/streetApproachDark01.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	height: 100vh;
+	margin-top: -120px;
+	width: 100vw; /*This and margin left below are needed for child div to be full width*/
+  	margin-left: calc(-50vw + 50%);
+}
+
+.jumbotron {
+	padding-top: 48vh;
+	background-color: transparent;
+	color: white;
+	font-family: 'Special Elite', cursive;
+}
+
+.statement {
+	font-size: 7em;
+}
+
+.bull {
+	font-size: .7em;
+}
+
+/*Us*/
+
+.us-container {
+	background-color: white;
+	width: 100vw; /*This and margin left below are needed for child div to be full width*/
+  	margin-left: calc(-50vw + 50%);
+}
+
+.about-left-col, .about-right-col {
+	margin-top: 100px;
+}
+
+.about-right-col {
+	margin-bottom: 100px;
+}
+
+.us-info-headers {
+	font-size: 2.5em;
+}
+
+
+
+/*****************************************/
+/*Media Queries*/
+/*****************************************/
+
+/*Logo*/
+
+@media (max-width: 767px) {
+	#header-logo {
+		margin-left: -50px;
+		width: 100px;
+	}
+}
+
+/*Navigation*/
+
+@media (max-width: 767px) {
+	.navbar {
+		margin-top: 5px;
+	}
+}
+
+/*Main Nav*/
+
+@media (max-width: 767px) { 
+	.main-nav {
+		background-color: transparent;
+		margin-top: 10px !important;
+	}
+}
+
+/*Home*/
+
+@media (max-width: 1170px) {
+	.statement {
+		font-size: 5.5em;
+	}
+}
+
+@media (max-width: 933px) {
+	.statement {
+		font-size: 4.8em;
+	}
+}
+
+@media (max-width: 854px) {
+	.statement {
+		font-size: 4em;
+	}
+}
+
+@media (max-width: 767px) {
+	.statement {
+		font-size: 2.5em;
+	}
+	.bull {
+		font-size: .5em;
+	}
+}
