@@ -113,7 +113,7 @@ body {
 
 .main-nav .navbar-toggler {
     border-color: rgb(0,0,0) !important;
-    background-color: white;
+    background-color: rgba(255,255,255, 0.6);
 }
 
 .main-nav .navbar-toggler .navbar-toggler-icon {
@@ -144,7 +144,7 @@ body {
 }
 
 .drink-link {
-	margin-left: 
+	margin-left: 30px;
 }
 
 .navbar .navbar-nav .nav-link { /*Text color*/
@@ -202,20 +202,80 @@ body {
 
 .us-container {
 	background-color: white;
+	color: #4c4c4c;
 	width: 100vw; /*This and margin left below are needed for child div to be full width*/
   	margin-left: calc(-50vw + 50%);
 }
 
-.about-left-col, .about-right-col {
+.us-left-col, .us-right-col {
 	margin-top: 100px;
 }
 
-.about-right-col {
+.us-right-col {
 	margin-bottom: 100px;
 }
 
 .us-info-headers {
 	font-size: 2.5em;
+}
+
+/*Food*/
+
+.food-container {
+	background-color: white;
+	color: #4c4c4c;
+	width: 100vw; /*This and margin left below are needed for child div to be full width*/
+  	margin-left: calc(-50vw + 50%);
+}
+
+.food-header {
+	margin-top: 100px;
+}
+
+.menu-item-name {
+	font-weight: bold;
+	font-size: 1.2em;
+	float: left;
+}
+
+.menu-item-coname {
+	float: left;
+}
+
+.menu-item-price {
+	float: right;
+}
+
+.street-taco-header-wrapper {
+	margin-top: 80px;
+}
+
+.street-taco-items {
+	margin-top: 50px;
+}
+
+.burrito-header-wrapper {
+	margin-top: 80px;
+}
+
+.burrito-items {
+	margin-top: 50px;
+}
+
+.specialty-header-wrapper {
+	margin-top: 80px;
+}
+
+.specialty-items {
+	margin-top: 50px;
+}
+
+.sides-header-wrapper {
+	margin-top: 80px;
+}
+
+.sides-items {
+	margin-top: 50px;
 }
 
 
@@ -226,6 +286,13 @@ body {
 
 /*Logo*/
 
+@media (max-width: 1400px) {
+	#header-logo {
+		margin-left: -75px;
+		width: 150px;
+	}
+}
+
 @media (max-width: 767px) {
 	#header-logo {
 		margin-left: -50px;
@@ -234,6 +301,29 @@ body {
 }
 
 /*Navigation*/
+
+@media (max-width: 1400px) {
+	.nav-link {
+		margin-top: 15px;
+		font-size: 1.3em;
+	}
+
+	.home-link {
+		margin-right: 22.5px;
+	}
+
+	.us-link {
+		margin-right: 105px;
+	}
+
+	.food-link {
+		margin-left: 105px;
+	}
+
+	.drink-link {
+		margin-left: 22.5px;
+	}
+}
 
 @media (max-width: 767px) {
 	.navbar {
@@ -252,7 +342,7 @@ body {
 
 /*Home*/
 
-@media (max-width: 1170px) {
+@media (max-width: 1400px) {
 	.statement {
 		font-size: 5.5em;
 	}
@@ -276,5 +366,50 @@ body {
 	}
 	.bull {
 		font-size: .5em;
+	}
+}
+
+/*Us*/
+
+@media (max-width: 767px) {
+	.us-left-col {
+		margin-top: 50px !important;
+	}
+	.us-header {
+		font-size: 2em;
+		text-align: center !important;
+	}
+	.us-para {
+		font-size: 1em;
+		margin: 20px 0px 20px 0px !important;
+	}
+
+	.us-right-col {
+		margin-top: 20px !important;
+		margin-bottom: 50px !important;
+	}
+	.us-info-headers {
+		font-size: 2em;
+		text-align: center !important;
+	}
+	.us-info {
+		text-align: center !important;
+	}
+}
+
+/*Food*/
+
+@media (max-width: 767px) {
+	.food-header {
+		font-size: 2.6em;
+	}
+	.street-taco-header {
+		font-size: 2.2em;
+	}
+	.burrito-header {
+		font-size: 2.2em;
+	}
+	.specialty-header {
+		font-size: 2.2em;
 	}
 }
